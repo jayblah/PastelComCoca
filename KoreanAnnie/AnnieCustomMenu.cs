@@ -66,7 +66,7 @@
                 new MenuItem(KoreanUtils.ParamName(mainMenu, "minenemiestoflashr"), "Only Use if X or More Enemies Hit")
                     .SetValue(new Slider(2, 1, 5)));
             flashTibbers.AddItem(
-                new MenuItem(KoreanUtils.ParamName(mainMenu, "orbwalktoflashtibbers"), "Orbwalk").SetValue(false));
+                new MenuItem(KoreanUtils.ParamName(mainMenu, "orbwalktoflashtibbers"), "Allow Movement When Pressed").SetValue(false));
 
             mainMenu.MiscMenu.AddItem(
                 new MenuItem(KoreanUtils.ParamName(mainMenu, "supportmode"), "Support Mode").SetValue(false));
@@ -80,7 +80,7 @@
             mainMenu.MiscMenu.AddItem(
                 new MenuItem(
                     KoreanUtils.ParamName(mainMenu, "interruptspells"),
-                    "Interrupt dangerous spells if possible").SetValue(true));
+                    "Interrupt Dangerous Spells if Possible").SetValue(true));
 
             Menu DontUseComboMenu = mainMenu.MiscMenu.AddSubMenu(new Menu("Don't Harass/Combo Against", "dontusecomboon"));
 
@@ -93,11 +93,11 @@
             }
 
             DontUseComboMenu.AddItem(
-                new MenuItem(KoreanUtils.ParamName(mainMenu, "dontuselabel1"), "--------------------"));
+                new MenuItem(KoreanUtils.ParamName(mainMenu, "dontuselabel1"), "-----------------------------------"));
             DontUseComboMenu.AddItem(
-                new MenuItem(KoreanUtils.ParamName(mainMenu, "dontuselabel2"), "IMPORTANT: Targets set to OFF will..."));
+                new MenuItem(KoreanUtils.ParamName(mainMenu, "dontuselabel2"), "IMPORTANT: Targets set to OFF will be..."));
             DontUseComboMenu.AddItem(
-                new MenuItem(KoreanUtils.ParamName(mainMenu, "dontuselabel3"), "...be attacked if alone or low HP"));
+                new MenuItem(KoreanUtils.ParamName(mainMenu, "dontuselabel3"), "...attacked if alone or are at low HP"));
         }
 
         private static void RemoveItems(CommonMenu mainMenu)
